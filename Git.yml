@@ -1,0 +1,23 @@
+Git Branching starategy
+
+# A branch strategy is a plan for how a team uses Git branches to develop, test, and release 
+# code in an organized way without breaking the main production branch.
+
+Diffrence between git tech and git pull.
+
+# Fetch---> Download the lates changes from the remote repo 
+#---> but does not merge them into your local branch
+
+Git pull.
+
+# Does git fetch + git merge in one step
+
+# Download the latest changes and immediately merge them into your current branch
+
+
+# "git fetch only downloads changes from remote" 
+# while git pull downloads and merges them into your current branch.
+----------------------------------------------------------------
+
+
+
