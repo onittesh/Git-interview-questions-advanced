@@ -27,4 +27,17 @@ what is pull request and branch
 
 # branch -->. A branch is nothing but a separate version of the code.
 
+20. What is the significance of git push --force-with-lease over git push --force?
 
+The git push --force-with-lease is a more cautious approach to force-pushing changes to 
+a remote repository than git push --force because it prevents accidentally overwriting
+ changes made by others on the remote repository.
+
+When you use git push --force, you force-push your changes to the remote repository 
+regardless of whether others have updated it since your last fetch. This can lead to the 
+unintentional loss of other developers' work.
+
+In contrast, git push --force-with-lease is a safer alternative. 
+It checks whether the remote branch you are pushing to has been updated by 
+others since your last fetch. If the remote branch has been updated, 
+the push is rejected, preventing you from overwriting other developers' changes unintentionally.
